@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <script src="https://kit.fontawesome.com/e0ef740f10.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="score-container">
+    <h1>Rock Paper Scissors Game</h1>
+  </header>
+  <div class="container">
+    <div class="score_container">
+      <span class="user">You</span>
+      <span id="score"></span>
+      <span class="com">Com</span>
+    </div>
+    <div class="buttons">
+      <button class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+      <button class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+      <button class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+    </div>
+    <div id="challenge">
+      <div id="you">
+        <div id="yourobject"></div>
+        <div class="who">You</div>
+      </div>
+      <div id="result"><p id ="who"></p></div>
+      <div id="com">
+        <div id="comobject"></div>
+        <div class="who">Computer</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
